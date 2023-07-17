@@ -1,0 +1,12 @@
+//Datos de la Base Datos query2
+
+/*PROCEDIMIENTO ALMACENADO*/
+CREATE PROC sp_login
+@usuario VARCHAR(50),
+@pass VARCHAR(10)
+AS
+BEGIN
+SELECT tOP 1 COUNT(*) FROM usuarios
+/*PONE EL PROCEDIMIENTO EN EL PRIMER LUGAR*/
+WHERE usuario=@usuario AND contrasena=@pass
+END

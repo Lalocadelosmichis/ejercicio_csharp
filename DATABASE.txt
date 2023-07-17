@@ -1,0 +1,21 @@
+//Datos de la Base Datos query1
+/*CREAR TABLA USUARIOS*/
+CREATE TABLE Usuarios
+(
+Usuario VARCHAR(50),
+contrasena VARCHAR(50),
+CONSTRAINT PK_Login PRIMARY KEY(Usuario)
+) 
+
+/*INSERTAR REGISTROS EN LA BASE DE DATOS*/
+
+INSERT INTO Usuarios(Usuario , contrasena)
+
+VALUES
+  	('dsalinas', 'clave123'),
+	('acasas', 'clave456'),
+	('mparedes', 'clave789')
+
+--VER USUARIOS REGISTRADOS--
+
+SELECT * FROM Usuarios
